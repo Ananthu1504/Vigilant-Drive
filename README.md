@@ -39,6 +39,11 @@ vigilant-drive/
 ├── Driver_Active.png # Sample output: active state
 ├── Driver_Sleeping.png # Sample output: sleeping state
 ├── vigilant_drive_final.pdf # Project report
+├── Vigilant_Drive_Code.py # Main Python script
+├── wakeup.wav # Alarm audio file
+├── Driver_Active.jpg # Sample image: active state
+├── Driver_Sleeping.jpg # Sample image: sleeping state
+├── Vigilant_Drive_Report.pdf # Project report (PDF)
 ├── README.md # This file
 └── .gitignore
 ```
@@ -76,7 +81,12 @@ An alert sound (`wakeup.wav`) is included to notify the driver if they are detec
 
 ## 📄 Project Report
 
+<<<<<<< HEAD
 📥 [Click here to view the full project report (PDF)](vigilantdrivefinal.pdf)
+=======
+You can find the detailed explanation of the system, hardware design, and software logic in the included report:  
+📄 `Vigilant_Drive_Report.pdf`
+>>>>>>> 70f1f7e (Renamed code and report files, fixed README)
 
 ---
 
