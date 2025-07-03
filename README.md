@@ -76,13 +76,13 @@ The audio alert is a preloaded `.wav` file named `wakeup.wav` — a loud "Wake U
 ## 📚 Report
 
 You can find the detailed explanation of the system, hardware design, and software logic in the included report:  
-📄 `Vigilant_Drive_Report.pdf`
+📄 `vigilant drive final.pdf`
 
 ---
 
 ## 👨‍🔬 Authors & Credits
 
-- Developed by **Ananthu Krishna** as a college project.
+- Developed by **Ananthu Krishna G** as a college project.
 - Uses open-source libraries: [Dlib](http://dlib.net/), [OpenCV](https://opencv.org/)
 
 ---
