@@ -1,45 +1,44 @@
 # 🚗 Vigilant Drive - Driver Drowsiness Detection System
 
-**Vigilant Drive** is a real-time driver alertness monitoring system built using **OpenCV**, **Dlib**, and **Raspberry Pi 4** with a **night vision camera**. The system detects whether the driver is active, drowsy, or sleeping by analyzing the eye aspect ratio using facial landmarks.
-
-When the driver is detected as sleeping, an alert sound is played through a connected speaker using `pygame`.
+**Vigilant Drive** is a real-time driver alertness monitoring system built using **OpenCV**, **Dlib**, and **Raspberry Pi 4** with a **night vision camera**. It detects whether the driver is active, drowsy, or sleeping by analyzing the eye aspect ratio (EAR) using facial landmarks. If the driver is found to be sleeping, an alert sound is triggered to wake them up.
 
 ---
 
 ## 📷 How It Works
 
-- A night vision camera captures live video of the driver's face.
-- Dlib’s `shape_predictor_68_face_landmarks` model is used to identify facial landmarks.
-- Eye aspect ratio (EAR) is calculated to determine eye closure.
-- Based on EAR:
-  - **Active**: Eyes open
-  - **Drowsy**: Eyes starting to close
-  - **Sleeping**: Eyes closed — alarm is triggered
-- Alert sound is played using a `.wav` file when sleep is detected.
+- A night vision camera captures live video of the driver’s face.
+- Dlib’s 68-point shape predictor model is used to detect facial landmarks.
+- Eye Aspect Ratio (EAR) is computed using the coordinates of the eyes.
+- Based on EAR thresholds:
+  - 👀 **Active** – Eyes open
+  - 😴 **Drowsy** – Eyes partially closed
+  - 💤 **Sleeping** – Eyes closed → **Alarm triggered**
+- An alert sound is played using `pygame` to wake the driver.
 
 ---
 
 ## 🧰 Technologies Used
 
-- **Python 3**
-- **OpenCV**
-- **Dlib**
-- **imutils**
-- **pygame**
-- **NumPy**
-- **Raspberry Pi 4**
-- **Night Vision Camera Module**
+- Python 3
+- OpenCV
+- Dlib
+- NumPy
+- Imutils
+- Pygame
+- Raspberry Pi 4
+- Night Vision Camera Module
 
 ---
 
 ## 📁 Project Structure
+
 ```
 vigilant-drive/
 ├── vigilant_drive.py # Main Python script
-├── wakeup.wav # Alarm audio file
-├── driver_active.jpg # Sample image: active state
-├── driver_sleeping.jpg # Sample image: sleeping state
-├── Vigilant_Drive_Report.pdf # Project report (PDF)
+├── wakeup.wav # Alarm audio (Minions screaming "Wake up!")
+├── driver_active.png # Sample output: active state
+├── driver_sleeping.png # Sample output: sleeping state
+├── Vigilant_Drive_Report.pdf # Project report
 ├── README.md # This file
 └── .gitignore
 ```
@@ -49,19 +48,21 @@ vigilant-drive/
 
 ## 📥 Required Model File
 
-This project uses Dlib’s **68 facial landmarks model**, which must be downloaded separately due to its large size.
+This project requires Dlib’s **68-point facial landmark predictor** file.
 
-👉 **[Download shape_predictor_68_face_landmarks.dat.bz2](https://github.com/davisking/dlib-models/raw/master/shape_predictor_68_face_landmarks.dat.bz2)**
+👉 [Download shape_predictor_68_face_landmarks.dat.bz2](https://github.com/davisking/dlib-models/raw/master/shape_predictor_68_face_landmarks.dat.bz2)
 
 > After downloading:
-> 1. Extract the `.bz2` file using any archive tool (e.g., 7-Zip or WinRAR)
+> 1. Extract the `.bz2` file using any archive tool (e.g., 7-Zip)
 > 2. Place the extracted `shape_predictor_68_face_landmarks.dat` in the same folder as `vigilant_drive.py`
 
 ---
 
-## 🔊 Audio Alert
+## 🔊 Alert Audio
 
-The audio alert is a preloaded `.wav` file named `wakeup.wav` — a loud "Wake Up!" sound (from the Minions 🎙️) used to jolt the driver back to alertness.
+An alert sound (`wakeup.wav`) is included to notify the driver if they are detected sleeping.
+
+> You can replace this with your own custom `.wav` file if needed.
 
 ---
 
@@ -69,25 +70,23 @@ The audio alert is a preloaded `.wav` file named `wakeup.wav` — a loud "Wake U
 
 | Driver Active | Driver Sleeping |
 |---------------|------------------|
-| ![Active](Driver_Active.png) | ![Sleeping](Driver_Sleeping.png) |
+| ![Active](driver_active.png) | ![Sleeping](driver_sleeping.png) |
 
 ---
 
-## 📚 Report
+## 📄 Project Report
 
-You can find the detailed explanation of the system, hardware design, and software logic in the included report:  
-📄 `vigilant drive final.pdf`
+📥 [Click here to view the full project report (PDF)](vigilant_drive_final.pdf)
 
 ---
 
-## 👨‍🔬 Authors & Credits
+## 👨‍💻 Author
 
-- Developed by **Ananthu Krishna G** as a college project.
-- Uses open-source libraries: [Dlib](http://dlib.net/), [OpenCV](https://opencv.org/)
+- **Ananthu Krishna G**
 
 ---
 
 ## 📜 License
 
-This project is for academic and educational purposes only.
+This project is created for academic and demonstration purposes only.
 
