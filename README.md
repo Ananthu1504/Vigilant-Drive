@@ -69,7 +69,7 @@ The audio alert is a preloaded `.wav` file named `wakeup.wav` — a loud "Wake U
 
 | Driver Active | Driver Sleeping |
 |---------------|------------------|
-| ![Active](driver_active.png) | ![Sleeping](driver_sleeping.png) |
+| ![Active](Driver_Active.png) | ![Sleeping](Driver_Sleeping.png) |
 
 ---
 
