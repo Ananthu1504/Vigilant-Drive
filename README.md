@@ -34,11 +34,11 @@
 
 ```
 vigilant-drive/
-├── vigilant_drive.py # Main Python script
+├── vigilant_drive_code_final.py # Main Python script
 ├── wakeup.wav # Alarm audio (Minions screaming "Wake up!")
-├── driver_active.png # Sample output: active state
-├── driver_sleeping.png # Sample output: sleeping state
-├── Vigilant_Drive_Report.pdf # Project report
+├── Driver_Active.png # Sample output: active state
+├── Driver_Sleeping.png # Sample output: sleeping state
+├── vigilant_drive_final.pdf # Project report
 ├── README.md # This file
 └── .gitignore
 ```
@@ -70,7 +70,7 @@ An alert sound (`wakeup.wav`) is included to notify the driver if they are detec
 
 | Driver Active | Driver Sleeping |
 |---------------|------------------|
-| ![Active](driver_active.png) | ![Sleeping](driver_sleeping.png) |
+| ![Active](Driver_Active.png) | ![Sleeping](Driver_Sleeping.png) |
 
 ---
 
