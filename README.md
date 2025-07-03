@@ -76,7 +76,7 @@ An alert sound (`wakeup.wav`) is included to notify the driver if they are detec
 
 ## 📄 Project Report
 
-📥 [Click here to view the full project report (PDF)](vigilant_drive_final.pdf)
+📥 [Click here to view the full project report (PDF)](vigilantdrivefinal.pdf)
 
 ---
 
